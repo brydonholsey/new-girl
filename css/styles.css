@@ -130,8 +130,30 @@ font-family: Helvetica, sans-serif; (used for all body text)
 /**HEADER/NAV STUFF**/
 
 header {
+  width: 100%;
+  text-align: center;
+}
+
+.internal {
   display: flex;
   justify-content: space-between;
+}
+
+.small-header-logo {
+  width: 78vw;
+  margin: 10% 5%;
+}
+
+.desktop-menu-stacked {
+  margin: 0 auto;
+}
+
+.desktop-menu-stacked li{
+  padding-bottom:20px;
+}
+
+.desktop-menu-stacked ul{
+  margin-bottom:40px;
 }
 
 .desktop-menu ul {
@@ -147,10 +169,12 @@ header {
   padding: 10px;
 }
 
-header ul {
-  font-size: 1.55em;
+header ul li a{
+  font-size: 3rem;
   font-family: 'Oswald', sans-serif;
   color: #0F68D0;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 /**OVERALL BODY**/
@@ -202,31 +226,19 @@ a {
 	text-decoration: none;
 }
 
-.small-header-logo a:hover {
-	color: #ccc;
-	background-color: #0F68D0
-}
-
 h2, h3, h4, h5, {
 	font-family: 'Oswald', sans-serif;
   color: #0F68D0;
 }
 
+.NewGirl {
+  margin: 0 auto;
+}
+
 
 /**IMAGE STUFF**/
-
-img {
-	max-width: 75%;
-	height: auto;
-	text-align: center;
-}
-
 .NewGirl img {
-  float: right;
-}
-
-.small-header-logo {
-  max-width: 200px;
+  max-width: 95vw;
 }
 
 /**FORMATTING FOR EPISODES**/
