@@ -141,7 +141,9 @@ header {
 
 .small-header-logo {
   width: 78vw;
-  margin: 10% 5%;
+  margin: 40px 5%;
+  max-width: 300px;
+  height: 100%;
 }
 
 .desktop-menu-stacked {
@@ -194,6 +196,7 @@ body {
 
 .container-home {
   background-image: url("../images/background.png");
+  background-size: cover;
 }
 
 
@@ -226,7 +229,7 @@ a {
 	text-decoration: none;
 }
 
-h2, h3, h4, h5, {
+h2, h3, h4, h5 {
 	font-family: 'Oswald', sans-serif;
   color: #0F68D0;
 }
@@ -238,7 +241,9 @@ h2, h3, h4, h5, {
 
 /**IMAGE STUFF**/
 .NewGirl img {
-  max-width: 95vw;
+  width: 95vw;
+  max-width: 500px;
+  display: flex;
 }
 
 /**FORMATTING FOR EPISODES**/
@@ -268,23 +273,79 @@ h2, h3, h4, h5, {
 /**FOOTER FORMATTING**/
 footer {
 	background-color: #0F68D0;
-	display: flex;
-	justify-content: space-between;
+  text-align: center;
 }
 
 h5 {
 	color: white;
 	text-transform: uppercase;
-	padding-top: 3%;
+	padding: 3% 0;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 footer img {
-	width: 10%;
-	height: auto;
-	padding: 1%;
+  width: 20vw;
+  padding-top: 5%;
+  max-width: 90px;
 }
 
  /**MEDIA QUERIES HERE**/
+
+@media (min-width:600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main.home {
+    justify-content: flex-end;
+  }
+
+  .small-header-logo {
+    max-width: 200px;
+    height: 100%;
+  }
+
+  .desktop-menu-stacked {
+    margin: 22px 5%;
+  }
+
+  .desktop-menu-stacked ul{
+    margin: 40px 0;
+  }
+
+  .desktop-menu-stacked li{
+    display: inline;
+    padding: 0 14px;
+  }
+
+  .desktop-menu-stacked a{
+    font-size: 1.5rem;
+  }
+
+  .NewGirl {
+    margin: 0;
+  }
+
+  .NewGirl img {
+    max-width: 800px;
+  }
+}
+
+@media (min-width:900px) {
+  .small-header-logo {
+    max-width: 750px;
+    width: 35vw;
+    height: 100%;
+    margin: 5vh 0 0 5vw;
+  }
+}
+
+
+
+
  /* @media (max-width: 700px) {
 	 .desktop-menu {
 		 display: none;
