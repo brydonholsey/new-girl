@@ -265,6 +265,10 @@ h2, h3, h4, h5 {
   display: none;
 }
 
+.c1, .c3, .c5, .c7 {
+  background-color: #F7F7F7;
+}
+
 
 /**IMAGE STUFF**/
 .NewGirl img {
@@ -390,6 +394,42 @@ footer img {
     align-self: center;
     padding-left: 30px;
   }
+
+  .episode-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .episode-sections article {
+    max-width: 43%;
+    padding-top: 40px;
+  }
+
+  .season-image-container {
+    padding: 20px 0;
+  }
+
+  .internal .small-header-logo {
+    margin:30px;
+    align-self: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer img {
+    padding:30px 50px;
+  }
+
+  footer h5 {
+    margin: 0;
+    align-self: center;
+    font-size: 1rem;
+    padding-right:50px;
+  }
 }
 
 @media (min-width:900px) {
@@ -398,6 +438,11 @@ footer img {
     width: 35vw;
     height: 100%;
     margin: 5vh 0 0 5vw;
+  }
+
+  .internal .small-header-logo {
+    width: 20vw;
+    max-width: 320px;
   }
 }
 
