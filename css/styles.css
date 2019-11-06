@@ -76,7 +76,7 @@ font-family: Helvetica, sans-serif; (used for all body text)
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 75%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -87,30 +87,37 @@ font-family: Helvetica, sans-serif; (used for all body text)
 
 .s1 .accordion {
 	background-image: url("../images/seasons/season1.jpg");
+  background-size: cover;
 }
 
 .s2 .accordion {
 	background-image: url("../images/seasons/season2.jpg");
+  background-size: cover;
 }
 
 .s3 .accordion {
 	background-image: url("../images/seasons/season3.jpg");
+  background-size: cover;
 }
 
 .s4 .accordion {
 	background-image: url("../images/seasons/season4.jpg");
+  background-size: cover;
 }
 
 .s5 .accordion {
 	background-image: url("../images/seasons/season5.jpg");
+  background-size: cover;
 }
 
 .s6 .accordion {
 	background-image: url("../images/seasons/season6.jpg");
+  background-size: cover;
 }
 
 .s7 .accordion {
 	background-image: url("../images/seasons/season7.jpg");
+  background-size: cover;
 }
 
 .active, .accordion:hover {
@@ -137,6 +144,8 @@ header {
 .internal {
   display: flex;
   justify-content: space-between;
+  background-image: url("../images/background.png");
+  background-size: cover;
 }
 
 .small-header-logo {
@@ -144,6 +153,12 @@ header {
   margin: 40px 5%;
   max-width: 300px;
   height: 100%;
+}
+
+.internal .small-header-logo {
+  margin: 30px auto;
+  width: 60vw;
+
 }
 
 .desktop-menu-stacked {
@@ -169,6 +184,10 @@ header {
   width: 100px;
   float: right;
   padding: 10px;
+}
+
+.menu-hidden {
+  display: none;
 }
 
 header ul li a{
@@ -238,6 +257,14 @@ h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+.hero-image {
+  margin: 20px auto;
+}
+
+.hero-image img{
+  display: none;
+}
+
 
 /**IMAGE STUFF**/
 .NewGirl img {
@@ -249,6 +276,10 @@ h2, h3, h4, h5 {
 /**FORMATTING FOR EPISODES**/
 .panel ul {
  columns: 3;
+ }
+
+ .episode-sections {
+   background-color: #F7F7F7;
  }
 
 .season-image-container {
@@ -331,6 +362,33 @@ footer img {
 
   .NewGirl img {
     max-width: 800px;
+  }
+
+  .menu-hidden {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-image img {
+    display: block;
+    max-width: 700px;
+    width: 50vw;
+    padding-top: 20px;
+  }
+
+  .hero-image h2 {
+    align-self: center;
+    padding-left: 30px;
   }
 }
 
