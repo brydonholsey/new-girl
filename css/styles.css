@@ -67,6 +67,10 @@ font-family: Helvetica, sans-serif; (used for all body text)
 .menu a:hover{text-decoration:none; color:#666;}
 /* ******* END HAMBURGER MENU **** */
 
+.hidden-hamburger, .menu {
+  display: none;
+}
+
 /* ******* START ACCORDION CODE **** */
 .accordion {
   color: #444;
@@ -124,13 +128,6 @@ font-family: Helvetica, sans-serif; (used for all body text)
 /* ******* END ACCORDION CODE **** */
 
 /**HEADER/NAV STUFF**/
-.menu {
-  display: none;
-}
-
-button {
-  display: none;
-}
 
 header {
   display: flex;
@@ -141,7 +138,6 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 10px;
-  width: 400px;
 }
 
 .desktop-menu li {
@@ -169,7 +165,11 @@ body {
 	max-width: 85%;
 	margin: auto;
 	text-align: center;
-	background-image: url("images/background.png");
+
+}
+
+.container-home {
+  background-image: url("../images/background.png");
 }
 
 
@@ -177,7 +177,6 @@ body {
 main {
 	display: flex;
 	flex-wrap: wrap;
-  padding: 2%;
 }
 
 h1 {
@@ -220,13 +219,14 @@ img {
 	max-width: 75%;
 	height: auto;
 	text-align: center;
-	padding: 1%;
 }
 
 .NewGirl img {
-  width: 50%;
-  height: auto;
   float: right;
+}
+
+.small-header-logo {
+  max-width: 200px;
 }
 
 /**FORMATTING FOR EPISODES**/
@@ -273,7 +273,7 @@ footer img {
 }
 
  /**MEDIA QUERIES HERE**/
- @media (max-width: 700px) {
+ /* @media (max-width: 700px) {
 	 .desktop-menu {
 		 display: none;
 	 }
@@ -308,8 +308,6 @@ footer img {
      font-size: .75em;
    }
 
-
-/**MAKES THEM STACK WITH IMAGE ON TOP THEN SUMMARY**/
    .character-container {
      display: flex;
      flex-wrap: wrap;
@@ -323,4 +321,4 @@ footer img {
 		 display: flex;
 		 flex-grow: 0;
 	 }
- }
+ } */
