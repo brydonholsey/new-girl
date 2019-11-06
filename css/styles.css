@@ -1,12 +1,8 @@
-/* fonts
-font-family: 'Oswald', sans-serif; (used for all headers and navigation)
-font-family: Helvetica, sans-serif; (used for all body text)
-*/
+@charset "UTF-8";
 
-/* colors:
-#0F68D0 - blue
-#F7F7F7 - light gray background
- */
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
 
 * {
 	margin: 0;
@@ -14,9 +10,20 @@ font-family: Helvetica, sans-serif; (used for all body text)
 	border: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+*:focus {
+	outline: 0;
 }
+
+/* fonts
+font-family: 'Oswald', sans-serif; (used for all headers and navigation)
+font-family: Helvetica, sans-serif; (used for all body text)
+*/
+
+/* colors:
+#F7F7F7 - light gray background
+#edba31 or #e7bb1f - New Girl Yellow
+#006ee6 or #0F68D0- New Girl blue
+ */
 
 /* ******* START HAMBURGER MENU **** */
 .hamburger{
@@ -60,8 +67,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .menu a:hover{text-decoration:none; color:#666;}
 /* ******* END HAMBURGER MENU **** */
 
-.desktop-menu {
-	display: none;
+.hidden-hamburger, .menu {
+  display: none;
 }
 
 /* ******* START ACCORDION CODE **** */
@@ -80,30 +87,37 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .s1 .accordion {
 	background-image: url("../images/seasons/season1.jpg");
+  background-size: cover;
 }
 
 .s2 .accordion {
 	background-image: url("../images/seasons/season2.jpg");
+  background-size: cover;
 }
 
 .s3 .accordion {
 	background-image: url("../images/seasons/season3.jpg");
+  background-size: cover;
 }
 
 .s4 .accordion {
 	background-image: url("../images/seasons/season4.jpg");
+  background-size: cover;
 }
 
 .s5 .accordion {
 	background-image: url("../images/seasons/season5.jpg");
+  background-size: cover;
 }
 
 .s6 .accordion {
 	background-image: url("../images/seasons/season6.jpg");
+  background-size: cover;
 }
 
 .s7 .accordion {
 	background-image: url("../images/seasons/season7.jpg");
+  background-size: cover;
 }
 
 .active, .accordion:hover {
@@ -119,3 +133,368 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 /* ******* END ACCORDION CODE **** */
+
+/**HEADER/NAV STUFF**/
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.internal {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+.small-header-logo {
+  width: 78vw;
+  margin: 40px 5%;
+  max-width: 300px;
+  height: 100%;
+}
+
+.internal .small-header-logo {
+  margin: 30px auto;
+  width: 60vw;
+
+}
+
+.desktop-menu-stacked {
+  margin: 0 auto;
+}
+
+.desktop-menu-stacked li{
+  padding-bottom:20px;
+}
+
+.desktop-menu-stacked ul{
+  margin-bottom:40px;
+}
+
+.desktop-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.desktop-menu li {
+  display: block;
+  width: 100px;
+  float: right;
+  padding: 10px;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+header ul li a{
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  color: #0F68D0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/**OVERALL BODY**/
+body {
+	font-family: Helvetica, sans-serif;
+  color: #0F68D0;
+  padding: 2px;
+}
+
+.container {
+	display: flex;
+	max-width: 85%;
+	margin: auto;
+	text-align: center;
+
+}
+
+.container-home {
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+
+/**FORMATTING FOR THE SECTIONS**/
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1 {
+	font-size: 5em;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 1%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'Oswald', sans-serif;
+  color: #0F68D0;
+}
+
+.NewGirl {
+  margin: 0 auto;
+}
+
+.hero-image {
+  margin: 20px auto;
+}
+
+.hero-image img{
+  display: none;
+}
+
+.c1, .c3, .c5, .c7 {
+  background-color: #F7F7F7;
+}
+
+
+/**IMAGE STUFF**/
+.NewGirl img {
+  width: 95vw;
+  max-width: 500px;
+  display: flex;
+}
+
+/**FORMATTING FOR EPISODES**/
+.panel ul {
+ columns: 3;
+ }
+
+ .episode-sections {
+   background-color: #F7F7F7;
+ }
+
+.season-image-container {
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+}
+
+/**FORMATTING FOR CHARACTERS**/
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/**FOOTER FORMATTING**/
+footer {
+	background-color: #0F68D0;
+  text-align: center;
+}
+
+h5 {
+	color: white;
+	text-transform: uppercase;
+	padding: 3% 0;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 20vw;
+  padding-top: 5%;
+  max-width: 90px;
+}
+
+ /**MEDIA QUERIES HERE**/
+
+@media (min-width:600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main.home {
+    justify-content: flex-end;
+  }
+
+  .small-header-logo {
+    max-width: 200px;
+    height: 100%;
+  }
+
+  .desktop-menu-stacked {
+    margin: 22px 5%;
+  }
+
+  .desktop-menu-stacked ul{
+    margin: 40px 0;
+  }
+
+  .desktop-menu-stacked li{
+    display: inline;
+    padding: 0 14px;
+  }
+
+  .desktop-menu-stacked a{
+    font-size: 1.5rem;
+  }
+
+  .NewGirl {
+    margin: 0;
+  }
+
+  .NewGirl img {
+    max-width: 800px;
+  }
+
+  .menu-hidden {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-image img {
+    display: block;
+    max-width: 700px;
+    width: 50vw;
+    padding-top: 20px;
+  }
+
+  .hero-image h2 {
+    align-self: center;
+    padding-left: 30px;
+  }
+
+  .episode-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .episode-sections article {
+    max-width: 43%;
+    padding-top: 40px;
+  }
+
+  .season-image-container {
+    padding: 20px 0;
+  }
+
+  .internal .small-header-logo {
+    margin:30px;
+    align-self: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer img {
+    padding:30px 50px;
+  }
+
+  footer h5 {
+    margin: 0;
+    align-self: center;
+    font-size: 1rem;
+    padding-right:50px;
+  }
+}
+
+@media (min-width:900px) {
+  .small-header-logo {
+    max-width: 750px;
+    width: 35vw;
+    height: 100%;
+    margin: 5vh 0 0 5vw;
+  }
+
+  .internal .small-header-logo {
+    width: 20vw;
+    max-width: 320px;
+  }
+}
+
+
+
+
+ /* @media (max-width: 700px) {
+	 .desktop-menu {
+		 display: none;
+	 }
+
+   .menu {
+     display: inline;
+   }
+
+   button {
+     display: inline;
+   }
+
+	 h1 {
+	 	font-size: 6em;
+	 	text-decoration: none;
+	 	text-align: center;
+	 }
+
+	 h2 {
+	 	font-size: 2em;
+	 }
+
+   h3 {
+     font-size: 1.5em;
+   }
+
+	 h5 {
+		 font-size: .5em;
+	 }
+
+   p {
+     font-size: .75em;
+   }
+
+   .character-container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .c1, .c2, .c3, .c4, .c5  {
+     display: block;
+   }
+
+	 footer {
+		 display: flex;
+		 flex-grow: 0;
+	 }
+ } */
